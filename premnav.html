@@ -59,6 +59,7 @@
 
 	<nav class="navMenu  border">
 		<a id="update" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-user-pen"></i> Edit Account Information</a>
+		<a id="cancel" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-ban"></i> Cancel Subscription</a>
 		<a id="discord" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-discord"></i> Open Discord</a>
 		<a id="hardrockbet" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-guitar"></i> Open HardRockBet</a>
 		<a id="draftkings" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-crown"></i> Open DraftKings</a>
@@ -83,6 +84,9 @@
 
 			if (id == 'update')
 				window.open("https://www.authpro.com/auth/playbookactionllc/?action=edit", '_blank').focus();
+
+			else if (id == "cancel")
+				window.open("https://billing.stripe.com/p/login/9AQ7uEa73dQP4jCcMM", '_blank').focus();
 
 			else if (id == "discord")
 				window.open("https://discord.com/channels/1245455393988149369/1296654771712823377", '_blank').focus();
